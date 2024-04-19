@@ -1,0 +1,53 @@
+body{
+    background: url('../images/sonicAmbiente.png');
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#sonic{
+    position: absolute;
+    left: -150px;
+    top: 69%;
+    height: 200px;
+    animation: correr 3s infinite;
+}
+
+#doctor{
+    position: absolute;
+    height: 150px;
+    top: 30%;
+    transform: rotateY(180deg);
+    left: 100%;
+    animation: voar 5s infinite;
+}
+
+@keyframes correr{
+    0%{
+        left: -150px;
+        top: 69%;
+    }
+
+    /* 50%{
+        left: 50%;
+        top: 65%;
+    } */
+
+    100%{
+        left: 110%;
+        top: 69%;
+    }
+}
+
+@keyframes voar{
+    0%{
+        top: 30%;
+        left: 100%;
+    }
+
+    100%{
+        left: -110%;
+        top: 30%;
+    }
+}
